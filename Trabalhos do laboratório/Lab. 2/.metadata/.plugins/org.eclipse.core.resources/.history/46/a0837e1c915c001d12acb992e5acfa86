@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class NumeroNarcisista {
+
+	public static int somador(int n){    
+        int soma = 0;
+        int m = n;
+        n = 153;
+          
+        while (n != 0)
+        {
+            soma =  (int) (soma + ( Math.pow(3, n % 10)));
+            n = n/10;
+            System.out.printf("soma: %d\n", soma);
+            System.out.printf("n: %d\n", n);
+        }
+        System.out.printf("somafinal: %d\n", soma);
+        
+      
+    return soma;
+    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int n = 153;
+		somador(n);
+		
+
+	}
+
+}

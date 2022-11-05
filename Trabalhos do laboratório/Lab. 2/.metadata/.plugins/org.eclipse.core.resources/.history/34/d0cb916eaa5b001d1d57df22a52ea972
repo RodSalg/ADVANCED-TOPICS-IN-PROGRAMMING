@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class SomaDigitos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int numero = scan.nextInt();
+		
+		int unidade = numero % 10;
+		int dezena = numero % 100;
+		int centena = numero % 1000;
+		
+		
+		System.out.println("dezena: " + dezena);
+		
+		
+		//achando o resto e fazendo uam soma
+		
+	}
+
+}

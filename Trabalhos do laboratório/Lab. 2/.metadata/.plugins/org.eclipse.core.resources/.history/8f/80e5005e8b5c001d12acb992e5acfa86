@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class FolhaPagamento {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan = new Scanner(System.in);
+		
+		double valHora = scan.nextDouble();
+		int horasT = scan.nextInt();
+		
+		double imposto = (11.00/100.00);
+		double INSS = 8/100;
+		
+		System.out.printf("Salario bruto: R$%.2f\n", (valHora * horasT));
+		System.out.printf("IR: R$%.2f\n", imposto * (valHora * horasT)  );
+		System.out.printf("INSS: R$%.2f\n",  INSS * (valHora * horasT));
+		System.out.printf("Total de descontos: R$%.2f");
+		System.out.printf("");
+				
+
+	}
+
+}

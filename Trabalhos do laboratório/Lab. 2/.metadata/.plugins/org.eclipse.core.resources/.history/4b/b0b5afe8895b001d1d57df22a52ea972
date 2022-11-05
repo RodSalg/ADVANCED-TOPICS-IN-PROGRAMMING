@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class RaizQuadrada {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		double raiz = scan.nextDouble();
+		raiz = Math.sqrt(raiz);
+		
+		System.out.printf("%f");
+
+	}
+
+}

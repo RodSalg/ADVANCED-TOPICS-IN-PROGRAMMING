@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class FolhaPagamento {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan = new Scanner(System.in);
+		
+		double valHora = scan.nextDouble();
+		int horasT = scan.hashCode();
+		
+		double imposto = 11/100;
+		double INSS = 8/100;
+		
+		System.out.printf("Salario bruto: %.2f\n", (valHora * horasT));
+		System.out.printf("IR: R$%.2f0\n", (imposto * (valHora * horasT)));
+		System.out.printf("");
+		System.out.printf("");
+		System.out.printf("");
+				
+
+	}
+
+}

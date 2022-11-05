@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class MediaColecoes {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int acumulador = 0;
+		
+		double number = 0;
+		double cont = 0;
+		double sum = 0;
+		Scanner scan = new Scanner(System.in);
+		
+		
+		while(number != -1) {
+			
+			while(number != -1) {
+				sum = sum + number;
+				cont = cont + 1;
+				number = scan.nextDouble();
+			}
+			System.out.printf("%d", sum/cont);
+			sum = 0;
+			cont = 0;
+			number = scan.nextDouble();
+		}
+		
+	
+	}
+	
+}

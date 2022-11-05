@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Desconto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		double valor = scan.nextDouble();
+		
+		
+		double fporCento;
+		
+		fporCento = (5/100);
+		System.out.printf("%f", fporCento);
+		
+		double valorTotal = (fporCento * valor);
+		
+		System.out.printf("%f", valorTotal);
+	}
+
+}

@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class NumeroNarcisista {
+
+	public static int somador(int n){    
+        int soma = 0;
+        int m = n;
+        int contador = 0;
+        
+        {
+            soma =  (int) (soma + ( Math.pow(n % 10, 3)));
+            n = n/10;
+        }
+          
+        while (n != 0)
+        {
+        	System.out.printf("numero que vai ser elevado:: %d\n",  n%10);
+        	System.out.printf("somado com: %f\n",  Math.pow(n % 10, 3) );
+            soma =  (int) (soma + ( Math.pow(n % 10, 3)));
+            n = n/10;
+            System.out.printf("soma: %d\n", soma);
+            System.out.printf("n: %d\n", n);
+        }
+        
+        if(soma == m) {
+        	System.out.println("SIM");
+        	System.out.println("NAO");
+        	System.out.printf("%d e %d\n", soma, m);
+        }else {
+        	System.out.println("NAO");
+        	System.out.printf("%d e %d\n", soma, m);
+        }
+        System.out.printf("somafinal: %d\n", soma);
+        
+      
+    return soma;
+    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		somador(n);
+		
+
+	}
+
+}

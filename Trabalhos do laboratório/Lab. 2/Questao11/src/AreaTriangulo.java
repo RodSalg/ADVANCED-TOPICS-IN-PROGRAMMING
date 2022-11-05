@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class AreaTriangulo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		double a =  scan.nextDouble();
+		double b = scan.nextDouble(); 
+		double c = scan.nextDouble();
+		
+		if((a + b > c) && (a + c > b) && (b + c > a)) {
+			//System.out.println("aqui deu bom meu patrao");
+			double s = (a + b + c) / 2.0;
+			//System.out.printf("%.2f\n", s);
+			double A = Math.sqrt(s * (s-a) * (s-b) * (s-c));
+			
+			System.out.printf("%.2f", A);
+		}else {
+			//System.out.println(" deu muito ruim");
+			System.out.println("Triangulo invalido");
+		}
+		
+
+		
+		
+
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class AreaTriangulo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		double a =  scan.nextInt();
+		double b = scan.nextInt(); 
+		double c = scan.nextInt();
+		
+		double s = (a + b + c) / 2.0;
+		double A = Math.sqrt(s * (s-a) * (s-b) * (s-c));
+		
+		System.out.printf("%.2f", A);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Questao8 {
+	
+	public static void par (int valor) {
+		
+		if((valor % 2) == 0) {
+			for(int i = 0; i < valor; i++) {
+				
+				System.out.printf("* ");
+			}
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int  quantidade = scan.nextInt();
+		
+		
+		for(int i = 0; i < quantidade; i++) {
+			
+			System.out.printf("* ");
+		}
+
+	}
+
+}

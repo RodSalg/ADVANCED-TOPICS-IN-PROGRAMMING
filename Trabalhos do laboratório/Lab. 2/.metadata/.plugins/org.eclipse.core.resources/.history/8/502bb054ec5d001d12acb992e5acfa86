@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class ValorExpoente {
+	
+	
+	public static void main (String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int numero;
+		int soma = 0;
+		while(soma < numero ) {
+			
+			
+		}
+		
+		
+	}
+}

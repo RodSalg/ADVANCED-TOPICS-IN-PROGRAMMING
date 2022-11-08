@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ValorExpoente {
+	
+	
+	public static void main (String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int numero =  scan.nextInt();
+		
+		int soma = 0;
+		int expoente = 0;
+		//System.out.println("cheguei aqui");
+		while(soma < numero ) {
+			
+			
+			expoente = expoente + 1;
+			soma = (int) (Math.pow(2, expoente) + soma);
+			
+			
+			System.out.printf("cheguei aqui %d\n", soma);
+			
+		}
+		
+		System.out.printf("%d", expoente);
+		
+		
+	}
+}

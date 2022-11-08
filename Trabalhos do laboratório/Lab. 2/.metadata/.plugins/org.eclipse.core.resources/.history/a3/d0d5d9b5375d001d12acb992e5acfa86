@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class AngryBirds {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+	
+		double v0 = scan.nextDouble();
+		double alfa = scan.nextDouble();
+		double d = scan.nextDouble();
+		alfa = Math.toRadians(alfa);
+		double r; 
+		double g = 9.8;
+		
+		if( (r - d == 0.1) || (r - d == -0.1) ) {
+			
+		}
+		
+		
+
+	}
+
+}

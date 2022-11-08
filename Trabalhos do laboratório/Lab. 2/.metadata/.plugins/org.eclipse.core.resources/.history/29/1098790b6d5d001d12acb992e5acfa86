@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Mediana {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner scan = new Scanner(System.in);
+        double numero = scan.nextDouble();
+        
+        ArrayList<Double> vet1 = new ArrayList<Double>();
+        
+        numero = scan.nextInt();
+        
+        while ( numero != -1 ){
+            vet1.add(numero);
+            numero = scan.nextDouble();
+        }
+        double resultado;
+        if(vet1.size() % 2 == 0) {
+        	//significa que é par
+        	System.out.printf("a %.1f\n", (vet1.get(vet1.size()/2))     );
+        	System.out.printf("b %.1f\n", (vet1.get(vet1.size()/2) + 1));
+        	resultado = ((vet1.get(vet1.size()/2) ) + ((vet1.get(vet1.size()/2) + 1)))/2 ;
+        	System.out.printf("%.1f", resultado);
+        	
+        }
+        
+	}
+
+}

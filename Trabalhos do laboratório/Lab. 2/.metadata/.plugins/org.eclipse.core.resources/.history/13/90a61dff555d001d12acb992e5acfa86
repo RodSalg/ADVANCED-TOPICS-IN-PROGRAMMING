@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class PorcentagemAcerto {
+
+    public static void main(String[] args){
+    	
+        Scanner scan = new Scanner(System.in);
+        
+        ArrayList<int> vet1 = new ArrayList<int>(); // vetor para guardar as respostas certas
+        
+        ArrayList<Integer> vet2 = new ArrayList<Integer>(); //vetor para guardar as respostas do eleitos
+
+        int numero = scan.nextInt();
+        while ( numero != -1 ){
+            vet1.add(numero);
+            numero = scan.nextInt();
+        }
+
+        numero = scan.nextInt();
+        while ( numero != -1 ){
+            vet2.add(numero);
+            numero = scan.nextInt();
+        }
+        
+        int contador = 0; //comoparador
+        for ( int i = 0; i < vet1.size(); i++ ){
+            if ( vet1.get(i) == vet2.get(i) ){
+                contador = contador + 1;
+            }
+        }
+        double porC;
+        porC = (contador * 100.00) / vet1.size();
+
+        System.out.printf("%.2f", porC);
+
+    }
+
+}

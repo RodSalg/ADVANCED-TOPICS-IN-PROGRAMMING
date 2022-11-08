@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class AnimaisCedulas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    	Scanner scan = new Scanner(System.in);
+        int numero = scan.nextInt();
+        
+        if(numero == 2) {
+        	System.out.println("Tartaruga");
+        }else if(numero == 5){
+        	System.out.println("Garça");
+        }else if(numero == 10){
+        	System.out.println("Arara");
+        }else if(numero == 20){
+        	System.out.println("Mico-leão-dourado");
+        }else if(numero == 50){
+        	System.out.println("Onça-pintada");
+        }else if(numero == 100){
+        	System.out.println("Garoupa");
+        }else {
+        	System.out.println("erro");
+        }
+
+	}
+
+}

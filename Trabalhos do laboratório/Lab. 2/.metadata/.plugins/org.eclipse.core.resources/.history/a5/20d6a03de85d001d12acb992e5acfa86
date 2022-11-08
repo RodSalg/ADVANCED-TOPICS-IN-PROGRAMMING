@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class AproximacaoSeno {
+
+	public static double fatorial(double n) {
+		double total = 1;
+		for(double i = n; i > 0; i--) {
+			total = total * i;
+		}
+		
+		//System.out.printf("total: %f", total);
+		return total;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		double x = scan.nextDouble();
+		double k = scan.nextDouble();
+		int flag = 0;
+		double expoente = 3;
+		double total = ;
+		for(int i = 0; i < k; i++) {
+			expoente = expoente + 2;
+			System.out.println(": " + expoente);
+			
+			if(flag == 0) {
+				total = total - (Math.pow(x, expoente)/fatorial(expoente)  );
+				flag = 1;
+				System.out.println("totalcaso1: " + total);
+			}else {
+				total = total + (Math.pow(x, expoente)/fatorial(expoente) );
+				flag = 0;
+				System.out.println("totalcaso2: " + total);
+			}
+		
+		}
+		
+		System.out.printf("%f ", total);
+		
+	}
+
+}

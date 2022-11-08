@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class PorcertagemAcerto {
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> vetorResp = new ArrayList<Integer>();
+        ArrayList<Integer> vetorGab = new ArrayList<Integer>();
+
+        int entrada = scan.nextInt();
+        while ( entrada != -1 ){
+            vetorResp.add(entrada);
+            entrada = scan.nextInt();
+        }
+
+        entrada = scan.nextInt();
+        while ( entrada != -1 ){
+            vetorGab.add(entrada);
+            entrada = scan.nextInt();
+        }
+        
+        int cont = 0;
+        for ( int i = 0; i < vetorResp.size(); i++ ){
+            if ( vetorResp.get(i) == vetorGab.get(i) ){
+                cont++;
+            }
+        }
+        double porC;
+        porC=  (cont * 100.00) / vetorResp.size();
+
+        System.out.printf("%.2f", porC);
+
+    }
+
+}

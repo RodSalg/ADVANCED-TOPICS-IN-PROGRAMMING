@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class TimeFutebol {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner scan = new Scanner(System.in);
+        
+        ArrayList<Double> vet1 = new ArrayList<Double>();
+
+	}
+
+}

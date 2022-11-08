@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class NumeroNeperiano {
+	
+	public static void fatorial(int n) {
+		double total = 1;
+		for(int i = n; i > 0; i--) {
+			total = total * n;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner scan = new Scanner(System.in);
+        double numero = scan.nextDouble();
+        
+        
+
+	}
+
+}

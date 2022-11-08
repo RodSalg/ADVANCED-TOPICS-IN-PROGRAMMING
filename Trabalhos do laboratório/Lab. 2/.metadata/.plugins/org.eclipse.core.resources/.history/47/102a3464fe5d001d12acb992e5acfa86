@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class CifraCesar {
+    public static void main(String[] args) {
+       
+    	Scanner scan = new Scanner(System.in);
+
+        car[] cifra = {'A' ,'B' ,'C' ,'D', 'E','F', 'G', 'H' ,'I', 'J', 'K', 'L' ,'M' ,'N', 'O' ,'P' ,'Q' ,'R' ,'S' ,'T','U' ,'V',
+        'W','X','Y','Z'};
+
+        int deslocamento = scan.nextInt();
+
+        String ts = "";
+        String textoEntrada = scan.nextLine();
+        textoEntrada= textoEntrada.trim();
+        int tamanho = textoEntrada.length();
+        car car;
+        int decimal;
+        int p0 = 97;
+        int pf = 122;
+        int pAtual;
+
+        for(int i = 0; i < tamanho; i++){
+            car = textoEntrada.carAt(i);
+            decimal = (int)car + deslocamento;
+
+            if( decimal > pf ){
+                decimal = Math.abs(decimal-pf);
+                pAtual = decimal-1;
+                ts = ts + cifra[pAtual];
+
+            }else if( decimal >= p0 && decimal <= pf ){
+                pAtual = decimal-p0;
+                ts = ts + cifra[pAtual];
+            }else{
+                ts = ts + car;
+            }
+
+        }
+        System.out.printf("%s\n", ts);
+
+    }
+}

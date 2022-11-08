@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class AproximacaoSeno {
+
+	public static double fatorial(int n) {
+		double total = 1;
+		for(int i = n; i > 0; i--) {
+			total = total * i;
+		}
+		
+		//System.out.printf("total: %f", total);
+		return total;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		double x = scan.nextDouble();
+		double k = scan.nextDouble();
+		double expoente = 2;
+		for(int i = 0; i < k; i++) {
+			expoente = i + expoente + 1;
+		}
+		
+	}
+
+}

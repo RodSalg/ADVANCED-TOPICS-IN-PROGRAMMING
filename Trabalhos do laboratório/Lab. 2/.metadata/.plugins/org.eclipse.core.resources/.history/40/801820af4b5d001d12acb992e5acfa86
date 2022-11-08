@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class AproximacaoPi {
+    public static void main(String[] args){
+       
+    	Scanner scan = new Scanner(System.in);
+        int entrada = scan.nextInt();
+        
+        double pi = 3;
+        double saida = 0;
+        int a = 2;
+        int b = 3;
+        int c = 4;
+
+        if ( entrada == 1 ){
+        	
+            System.out.printf("%.6f\n", pi);
+            
+        }else if ( entrada >= 1){ 
+        	
+            System.out.printf("%.6f\n", pi);
+            
+            for( int i =1; i<entrada; i++ ){
+            	
+                if( i%2 != 0 ){
+                	
+                    saida = 4.0/( a * b * c );
+                    saida = saida + pi;
+                    pi = saida;
+                    System.out.printf("%.6f\n", saida);
+                    
+                }else{
+                	
+                    saida = 4.0 /( a*b*c );
+                    saida= pi - saida;
+                    pi = saida;
+                    System.out.printf("%.6f\n", saida);
+                }
+                a = a + 2;
+                b = b + 2;
+                c = c + 2;
+            }
+        }
+
+    }
+}

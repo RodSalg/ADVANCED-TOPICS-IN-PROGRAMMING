@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class OperacoesString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		String texto =  scan.nextLine();
+		
+		System.out.printf("%d\n", texto.length() );
+		System.out.printf("%s\n", texto.charAt(0) );
+		System.out.printf("%s\n", texto.charAt(texto.length()-1) );
+		System.out.printf("%s\n", texto.toUpperCase() );
+		System.out.printf("%s\n\n\n", texto.toLowerCase() );
+		String texto2 = texto;
+		System.out.printf("%s\n", texto2.replace('a', 'e') );
+		texto2 = texto;
+		System.out.printf("%s\n", texto2.replace(, ' ') );
+		System.out.printf("%s\n", texto );
+		//Jebediah Kerman
+
+	}
+
+}

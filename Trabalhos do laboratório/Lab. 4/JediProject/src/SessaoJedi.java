@@ -73,7 +73,8 @@ public class SessaoJedi {
         String nome = "--> SESSÃO "+this.nome+" (Treinador: " + this.treinador.getDescricao() + ")\n";
         
         for ( int i = 0 ; i < this.iniciados.size(); i++ ){
-            nome+= "  - Iniciado "+( i + 1 )+": "+this.iniciados.get(i).getDescricao() +" \n";
+        	
+            nome+= "  - Iniciado "+ ( i + 1 ) +": "+ this.iniciados.get(i).getDescricao() +" \n";
         }
 
         return nome;

@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\georg\OneDrive\Documentos\GitHub\Projeto-de-Programas\Trabalhos do laboratório\Lab. 4\JediProject\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index

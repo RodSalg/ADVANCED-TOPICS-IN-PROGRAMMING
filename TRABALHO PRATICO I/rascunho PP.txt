@@ -1,0 +1,34 @@
+como deve ser feito:
+
+CRUD - médicos (X)
+CRUD - pacientes -> apenas se o médico estiver disponível ( )
+	-> possibilidade de clicar para ver horarios e médicos disponíveis (somente mostrar a tabela);
+Relatório pacientes (histórico)
+
+verifica se há tempo livre para como os médicos,
+se houver eu marco a consulta do paciente (cadastro paciente no banco de dados)
+
+tabela médico:
+
+	nome (x)
+	especialidade (x)
+	Horario de Entrada (x)
+	Horario de Saída (x)
+
+tabela paciente
+
+	nome (x)
+	idade (x)
+	tipo sanguineo (x)
+	Especialista (x)
+	Horario que deseja ser atendido (x)
+	Sintomas (x)
+
+-> atualmente: falta eu alterar a parte de marcar consulta do AreaRecepcionista;
+-> corrigir bug  -> sempre falando que o usuário já está cadastrado no sistema();
+
+-> caso tente cadastrar e o usuario já existe (resolvido);
+	
+
+
+

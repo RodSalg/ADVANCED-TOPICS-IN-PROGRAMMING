@@ -1,0 +1,19 @@
+Controle de médicos:
+	- cadastrar, remover alteração (editar) e relatorio;
+Controle de Usuários:
+	- Recepcionistas e Médicos
+Controle de Pacientes:
+
+
+uso dos recepcionistas:
+	-> Os recepcionistas poderão marcar consultas (caso o médico esteja disponível);
+	-> Os médicos utilizarão para buscar o histórico do paciente;
+
+
+----------- INTERFACE -----------
+
+Fluxo: 
+
+	Médico  | Recepcionista
+
+Médico: 

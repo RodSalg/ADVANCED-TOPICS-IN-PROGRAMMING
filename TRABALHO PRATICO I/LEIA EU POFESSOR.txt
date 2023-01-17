@@ -1,0 +1,9 @@
+querido professor, eu não sabia como inserir o banco de dados
+por conta disso eu coloquei os scripts para a criação do banco de dados
+e das tabelas.
+
+
+na tabela médicos o pacientes cadastrados foi de uma ideia que tentei fazer mas que não funcionou
+muito bem, peço-lhe perdão, mas em nada irá influenciar no funcionamento do código, eu a abstrai.
+
+obrigado, professor e boa correção.
